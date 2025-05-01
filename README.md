@@ -1,7 +1,20 @@
 # Welcome to GitHub Desktop!
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+# Navigate to your project directory
+cd ~/projects/movielens-twotower-pytorch
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
-update
+# Optional: deactivate existing env
+deactivate
 
+# Create a new virtual environment
+python3 -m venv .venv
+
+# Activate the environment (Mac/Linux)
+source .venv/bin/activate
+
+# (Windows)
+# .venv\Scripts\activate
+
+# Upgrade pip and install dependencies
+pip install --upgrade pip
+pip install torch torchmetrics pandas scikit-learn jupyter tqdm
